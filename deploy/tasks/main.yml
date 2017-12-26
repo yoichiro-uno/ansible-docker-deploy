@@ -5,4 +5,10 @@
     pull: true
     restart_policy: always
     state: started
+    privileged: yes
     ports: "{{container_ports}}"
+    command:
+      - 'sleep infinity'
+
+#- name: instal Python
+#  shell: docker exec -i "{{container_name}}"  /bin/bash -lc "yum update; yum install -y python"
