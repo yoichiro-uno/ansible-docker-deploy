@@ -1,0 +1,4 @@
+container_name: mysqlcon1
+container_image: centos
+container_ports:
+  -  13306:3306
